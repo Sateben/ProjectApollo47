@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id = "@+id/done_bar"
+        android:icon="@drawable/ic_done_black_48dp"
+        android:title = "Done_Btn"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/app_iconic"
+        android:icon="@drawable/apollo_4_7"
+        android:title="APP_Btn"
+        app:showAsAction = "always"
+        />
+</menu>

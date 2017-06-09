@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Apollo</string>
+
+    <string name="conclusion_statement_positive">
+        Thank you for using Apollo. Apollo does not believe that you have a significant risk for cardiovascular disease. However, re-confirming this conclusion with a doctor is always recommended.
+    </string>
+    <string name="conclusion_statement_negative">
+        Thank you for using Apollo. Unfortunately, Apollo believes that you may have a significant risk for cardiovascular disease. Apollo would recommends that you visit a doctor for re-confirming this.
+    </string>
+
+    <string name="review_ask_info">
+        To help Apollo better at helping others, we would like to know whether or not you were diagnosed with a cardiovascular disease. Thank you for your help!
+    </string>
+</resources>

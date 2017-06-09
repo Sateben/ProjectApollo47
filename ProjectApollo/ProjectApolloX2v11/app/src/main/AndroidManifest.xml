@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.krrishdholakia.apollo.projectapollox2v11">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/apollo_4_7"
+        android:label="Apollo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false">
+        <activity android:name="com.krrishdholakia.apollo.application.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.krrishdholakia.apollo.application.App_Sign_In.ChooserActivity"
+            android:label="Apollo">
+        </activity>
+
+        <activity android:name=".App_Sign_In.GoogleSignInActivity"
+            android:label="Apollo">
+        </activity>
+
+        <activity android:name="com.krrishdholakia.apollo.application.App_Sign_In.EmailPasswordActivity"
+            android:label="Apollo">
+
+        </activity>
+
+        <activity android:name="com.krrishdholakia.apollo.application.App_Sign_In.AnonymousAuthActivity"
+            android:label="Apollo">
+        </activity>
+
+        <activity android:name=".App_Sign_In.CustomAuthActivity"
+            android:label="Apollo">
+
+        </activity>
+
+        <activity android:name="com.krrishdholakia.apollo.application.Check.Check_All_Data"
+           android:label="Apollo" ></activity>
+
+        <activity android:name="com.krrishdholakia.apollo.application.Check.Check_Initial_Data"
+            android:label="Apollo" ></activity>
+        <activity android:name="com.krrishdholakia.apollo.application.Check.Data_Check_Conclusion"
+            android:label="Apollo" ></activity>
+
+        <activity android:name="com.krrishdholakia.apollo.application.Medical_Information.Medical_Information"
+            android:label="Apollo" ></activity>
+
+        <activity android:name="com.krrishdholakia.apollo.application.Medical_Information.Medical_Information_Enter"
+            android:label="Apollo" ></activity>
+
+        <activity android:name="com.krrishdholakia.apollo.application.Review.Review"
+            android:label="Apollo" ></activity>
+
+        <activity android:name="com.krrishdholakia.apollo.application.Review.Review_Final_Add"
+            android:label="Apollo" ></activity>
+
+        <activity android:name="com.krrishdholakia.apollo.application.Review.Review_Final_Med_Profile_Push"
+            android:label="Apollo" ></activity>
+
+        <activity android:name="com.krrishdholakia.apollo.application.Information_Hub"
+            android:label="Apollo" ></activity>
+
+    </application>
+
+</manifest>

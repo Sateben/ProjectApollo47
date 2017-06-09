@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.krrishdholakia.projectapollox2v7.MainActivity"
+    android:id="@+id/relative_ly">
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/progress_bar"
+        android:layout_width = "match_parent"
+        android:layout_height="10sp"
+        android:indeterminate="true"/>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="500sp"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    android:scrollbarStyle="insideInset"
+    android:paddingTop="?android:attr/actionBarSize"
+    android:id="@+id/scroll_View"
+    android:layout_below="@id/progress_bar">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="500sp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop = "30sp"
+                    android:layout_marginLeft="15sp"
+                    android:text="AGE"
+                    android:textSize="30sp"
+                    android:id="@+id/Age_Txt_Vw"/>
+                <EditText
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop = "25sp"
+                    android:inputType="number"
+                    android:id="@+id/Age_Edt_Txt"
+                    android:layout_weight="0.02"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_2"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_below="@id/card_view"
+            android:layout_marginTop="20sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text = "SEX"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop = "20sp"
+                    android:layout_marginLeft="15sp"
+                    android:textSize="30sp"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+                    android:id="@+id/spinner_sex"
+                    android:layout_alignParentRight="true">
+                </Spinner>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_3"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_below="@id/card_view_2"
+            android:layout_marginTop="20sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text = "Cholesterol"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop = "30sp"
+
+                    android:layout_marginLeft="15sp"
+                    android:textSize="30sp"
+                    android:id="@+id/cholesterol_Txt_Vw"/>
+
+                <EditText
+                    android:layout_width="110sp"
+                    android:gravity="right"
+                    android:layout_marginBottom="30sp"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:id="@+id/cholesterol_Edt_Txt"
+                    android:layout_weight="0.02"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_4"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_below="@id/card_view_3"
+            android:layout_marginTop="20sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:text = "MAX HR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop = "30sp"
+                    android:textSize="30sp"/>
+
+                <EditText
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30sp"
+                    android:inputType="number"
+                    android:id="@+id/max_HR_Edt_Txt"
+                    android:layout_weight="0.02"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_5"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_below="@id/card_view_4"
+            android:layout_marginTop="20sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text = "THAL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop = "30sp"
+                    android:textSize="30sp"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+                    android:id="@+id/spinner_thal"
+                    android:layout_alignParentRight="true">
+
+                </Spinner>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_6"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_below="@id/card_view_5"
+            android:layout_marginTop="20sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text = "CA"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop = "30sp"
+                    android:textSize="30sp"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+                    android:id="@+id/spinner_ca"
+                    android:layout_alignParentRight="true">
+
+                </Spinner>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_7"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_below="@id/card_view_6"
+            android:layout_marginTop="20sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text = "CPT"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop = "30sp"
+                    android:textSize="30sp"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+                    android:id="@+id/spinner_cpt"
+                    android:layout_alignParentRight="true">
+
+                </Spinner>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_8"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_below="@id/card_view_7"
+            android:layout_marginTop="20sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text = "E.I.ANGINA"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop = "30sp"
+                    android:textSize="30sp"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+                    android:id="@+id/spinner_eia"
+                    android:layout_alignParentRight="true">
+
+                </Spinner>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_9"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_below="@id/card_view_8"
+            android:layout_marginTop="20sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text = "FASTING_BS"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop = "30sp"
+                    android:textSize="30sp"/>
+
+                <EditText
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30sp"
+                    android:inputType="number"
+                    android:id="@+id/Fasting_BS_Edt_Txt"
+                    android:layout_weight="0.02"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_10"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_below="@id/card_view_9"
+            android:layout_marginTop="20sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text = "REST EKG"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop = "30sp"
+                    android:textSize="30sp"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+                    android:id="@+id/spinner_rest_ekg"
+                    android:layout_alignParentRight="true">
+
+                </Spinner>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_11"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_below="@id/card_view_10"
+            android:layout_marginTop="20sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text = "OLDPEAK"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop = "30sp"
+                    android:textSize="30sp"/>
+
+                <EditText
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30sp"
+                    android:inputType="number"
+                    android:id="@+id/oldpeak_Edt_Txt"
+                    android:layout_weight="0.02"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_12"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_below="@id/card_view_11"
+            android:layout_marginTop="20sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text = "REST BP"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop = "30sp"
+                    android:textSize="30sp"/>
+
+                <EditText
+                    android:layout_width="110sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30sp"
+                    android:inputType="number"
+                    android:id="@+id/rest_bp_Edt_Txt"
+                    android:layout_weight="0.02"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_13"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_below="@id/card_view_12"
+            android:layout_marginTop="20sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text = "SLOPE"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop = "30sp"
+                    android:textSize="30sp"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+                    android:id="@+id/spinner_slope"
+                    android:layout_alignParentRight="true">
+
+                </Spinner>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+    </RelativeLayout>

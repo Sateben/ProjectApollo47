@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.krrishdholakia.projectapollox2v2.MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/Age_Layout"
+    android:layout_alignParentTop="true"
+    android:paddingTop="10sp"
+    android:paddingBottom="10sp"
+    android:paddingLeft="34sp"
+    android:background="#c6397d"
+    android:layout_marginLeft="34sp"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="AGE"
+            android:textSize="24sp"
+            android:id="@+id/Age_Txt_Vw"/>
+        <EditText
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50sp"
+            android:paddingTop="10sp"
+            android:inputType="text"
+            android:id="@+id/Age_Edt_Txt"
+            android:layout_weight="0.02"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_marginTop="20sp"
+    android:paddingTop="10sp"
+    android:paddingBottom="10sp"
+    android:layout_marginLeft="34sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/Age_Layout"
+    android:id="@+id/Sex_Layout"
+    android:background="#c8f141"
+    android:paddingLeft="34sp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="SEX"
+            android:textSize="24sp"
+            android:id="@+id/Sex_Txt_Vw" />
+        <EditText
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:inputType="text"
+            android:id="@+id/Sex_Edt_Txt"/>
+    </RelativeLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:layout_marginLeft="34sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Sex_Layout"
+        android:id="@+id/RestingBP_Layout"
+        android:background="#f16d41"
+        android:paddingLeft="34sp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:text="REST BP"
+                android:textSize="24sp"
+                android:id="@+id/RestingBP_Txt_Vw" />
+            <EditText
+                android:layout_width="110sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:inputType="text"
+                android:id="@+id/RestingBP_Edt_Txt"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:layout_marginLeft="34sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RestingBP_Layout"
+        android:id="@+id/Cholestrol_Layout"
+        android:background="#41f1c5"
+        android:paddingLeft="34sp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:text="CHOLESTROL"
+                android:textSize="24sp"
+                android:id="@+id/Cholestrol_Txt_Vw" />
+            <EditText
+                android:layout_width="110sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:inputType="text"
+                android:id="@+id/Cholestrol_Edt_Txt"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:layout_marginLeft="34sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Cholestrol_Layout"
+        android:id="@+id/MaxHR_Layout"
+        android:background="#dbd5b3"
+        android:paddingLeft="34sp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:text="MAX HR"
+                android:textSize="24sp"
+                android:id="@+id/MaxHR_Txt_Vw" />
+            <EditText
+                android:layout_width="110sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:inputType="text"
+                android:id="@+id/MaxHR_Edt_Txt"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:layout_marginLeft="34sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MaxHR_Layout"
+        android:id="@+id/Thalas_Layout"
+        android:background="#dbd5b3"
+        android:paddingLeft="34sp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:text="THALAS"
+                android:textSize="24sp"
+                android:id="@+id/Thalas_Txt_Vw" />
+            <EditText
+                android:layout_width="110sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:inputType="text"
+                android:id="@+id/Thalas_Edt_Txt"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

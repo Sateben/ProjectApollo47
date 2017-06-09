@@ -1,0 +1,27 @@
+1. Chest Pain type – chest pains commonly experienced by heart disease patients could be typical or atypical angina pectoris (pain, pressure, squeezing felt by heart muscle), non-anginal pain, or asymptomatic (no pain felt) (“Angina (chest Pain”) These four conditions are indicated by 1,2,3, and 4 in the records as below:
+-	1:Typical angina
+-	2:Atypical angina
+-	3:Non anginal pain
+-	4:Asymptomatic
+2. Trestbps – resting blood pressure, recorded in mm Hg
+3. Chol – serum Cholesterol level in mg/dl
+4. Fasting blood sugar level (fastbps) – Intake of eating or drinking liquids other than water is refrained for 8 hours to test for diabetes. If blood sugar level is below 120mg/dl it is recorded false, and true if the level is above 120mg/dl. Binary values are used to record data. 1:true 0:false (“Fasting Blood Sugar Levels”)
+5. Resting electrocardiogram (restecg) – resting electrocardiogram is recording of the heart’s electrical activity when it performs excitation and recovery to initiate each heart beat. Integer values from 0 to 2 are used to indicate trends found in patients’ electrocardiogram.  (“Resting Electrocardiogram (EKG)”)
+-	0:normal
+-	1:ST-T wave abnormality
+-	2:Showing probable or definite left vascular hypertrophy by Estes’ criteria
+6. Thalach – maximum heart rate reached
+7.	Exang – exercise induced anginal pain
+-	1:yes
+-	0:no
+8.	Old peak – ST depression induced by exercise relative to rest
+9.	Slope – the slope of the peak exercise ST segment
+-	1:Upsloping
+-	2:Flat
+-	3:Downsloping
+10.	Ca – number of major vessels colored by fluoroscopy, which is a type of imaging that displays continuous X-ray image while observing the desired area of body. Integer values are used to indicate how many major vessels have been observed. (“Radiation-Emitting Products”)
+-	0: zero vessels
+-	1: one vessel
+-	2: two vessels
+-	3: three vessels
+11.	Thal – thalassemia 3:normal 6:fixed defect 7:reversible defect

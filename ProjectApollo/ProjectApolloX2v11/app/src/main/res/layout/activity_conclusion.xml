@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="?attr/colorPrimary" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            app:cardBackgroundColor="@android:color/white"
+            android:id="@+id/review_prob_statement"
+            android:elevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txt_vw_conclusion_prob_statement"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="50dp"
+                    android:gravity="center"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/review_prob_statement"
+            android:background="@drawable/medical"
+            android:elevation="2dp"
+            android:id="@+id/medical_profile_conclusion_screen">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="MEDICAL PROFILE"
+                android:fontFamily="sans-serif-light"
+                android:textSize="40dp"
+                android:gravity="center"
+                android:background="@drawable/medical"
+                android:backgroundTint="#C2185B"
+                android:backgroundTintMode="multiply"
+                android:textColor="#FFFFFF"
+                android:layout_alignTop="@+id/view"
+                android:layout_alignStart="@+id/review_conclusion_Screen" />
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+</FrameLayout>
